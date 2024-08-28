@@ -1,0 +1,417 @@
+@import url(global.css);
+
+header {
+    margin-top: -19px;
+    width: 100%;
+    height: fit-content;
+    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite alternate;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header::after {
+    content: "";
+    width: 100%;
+    height: 290px;
+    background: linear-gradient(0deg, var(--primary-color), transparent);
+    bottom: 0;
+
+}
+
+.streaming-icons {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin: 100px 0px 50px;
+}
+
+header .title {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 600px;
+    height: fit-content;
+    text-align: center;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+header .title h1 {
+    font-weight: lighter;
+}
+
+header .title-weigth {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.divider {
+    width: 55%;
+    min-height: 5px;
+    background: var(--divider-bg-color);
+    max-width: 700px;
+    margin: 50px 0px;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.subscribe .price {
+    font-size: 2.7rem;
+    font-weight: bolder;
+}
+
+.subscribe .subscribe-btn {
+    margin-top: 35px;
+    background: var(--btn-bg-color-gradient);
+    background-size: 250%;
+    width: 90%;
+    height: 46px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: var(--text-color);
+    letter-spacing: 4px;
+    font-weight: bolder;
+    padding: 5px 20px;
+}
+
+.animated-btn {
+    animation: wiggle 2.2s linear infinite;
+}
+
+.subscribe figcaption {
+    margin-top: 35px;
+    max-width: 250px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.subscription-plans {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/background-movies-series.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.subscripe-types {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    perspective: 2000px;
+    perspective-origin: top;
+}
+
+.subscription-plans h2 {
+    width: 80%;
+    max-width: 1150px;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.subscription-plans .subscribe-type {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    max-width: 520px;
+    height: 610px;
+    border-radius: 10px;
+    padding: 45px;
+    background: var(--card-bg-color);
+    transition: transform 1s ease-in-out;
+}
+
+.subscribe-type h2{
+    min-width: 100%;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.subscribe-type p:has(.card-price) {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.subscribe-type .card-price {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #FF00E5;
+    font-weight: bold;
+}
+
+.subscribe-benefits-plan {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-benefits-plan li {
+    min-width: 216px;
+    padding: 0px 0px 0px 14px;
+    margin-bottom: 10px;
+}
+
+.subscribe-benefits-plan li::marker {
+    content: "+";
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.subscription-plans .subscribe-btn {
+    margin-top: auto;
+    width: 95%;
+    padding: 20px 30px;
+    background: var(--btn-bg-color-gradient);
+    background-size: 250%;
+    border: none;
+    border-radius: 50px;
+    color: var(--text-color);
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.catalog-films {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 230px 0px 110px 0px;
+    text-align: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.catalog-films h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.catalog-films .catalog-items {
+    display: flex;
+    gap: 40px;
+    width: 82%;
+    overflow: auto;
+    padding: 20px;
+}   
+
+.catalog-items .catalog-item {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s, background 0.8s, border 1s;
+}
+
+.catalog-item:hover {
+    border: 3px solid var(--tertiary-color);
+    border-radius: 10px;
+    transform: scale(1.05);
+}
+
+.catalog-image {
+    transition: opacity 2s;
+}
+
+.catalog-item:hover .catalog-image{
+    opacity: 0;
+  }
+
+.catalog-item:nth-child(1):hover {
+    background-image: url(../images/hbo-hover_0.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.catalog-item:nth-child(2):hover {
+    background-image: url(../images/MAX-Hover.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.catalog-item:nth-child(3):hover {
+    background-image: url(../images/DC-Hover.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.catalog-item:nth-child(4):hover {
+    background-image: url(../images/WB-Hover.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.catalog-item:nth-child(5):hover {
+    background-image: url(../images/CN-Hover.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.catalog-item:nth-child(6):hover {
+    background-image: url(../images/UCL-Hover.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.catalog-films .catalog-items img {
+    max-width: 400px;
+    min-width: 0px;
+}
+
+
+@media screen and (min-width:480px) {
+    .subscribe-type h2 {
+        font-size: 2.4rem;
+    }
+    .subscribe-type .card-price {
+        font-size: 2rem;
+    }
+    .subscribe-type p:has(.card-price) {
+        font-size: 1.5rem;
+    }
+    .subscribe-benefits-plan li {
+        font-size: 1.2rem;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    .gradient-btn {
+        transition: background 1s, outline 1s, transform 1s;
+    }
+
+    .gradient-btn:hover {
+        background-color: transparent;
+        background-position: 100%;
+        outline: 2px solid var(--secondary-color);
+        transform: scale(1.05);
+    }
+}
+
+@media  screen and (min-width: 480px) and (max-width:800px) {
+    .catalog-items {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .catalog-item {
+        min-width: 20%;
+        max-width: 44%;
+        
+    }
+
+    .catalog-items img {
+        width: fit-content;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    .catalog-films {
+        max-width: 1600px;
+    }
+
+    .catalog-items {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .catalog-item {
+        max-width: 29%;
+    }
+
+    .catalog-items img {
+        width: fit-content;
+        max-width: 1200px;
+    }
+}
+
+
+@media screen and (min-width:1164px) {
+    .subscription-plans {
+        background-size: cover;
+        background-position: 0px;
+    }
+    .subscripe-types {
+
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .subscripe-types:has(.subscribe-type:nth-child(1):hover) .multitelas {
+        transform: rotateY(-45deg);
+    }
+    
+    .subscripe-types:has(.subscribe-type:nth-child(2):hover) .mobile {
+        transform: rotateY(45deg);
+    }
+}
+
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes wiggle {
+    0%,
+    10% {
+      transform: rotate(0);
+    }
+    15% {
+      transform: rotate(-15deg);
+    }
+    20% {
+      transform: rotate(10deg);
+    }
+    25% {
+      transform: rotate(-10deg);
+    }
+    30% {
+      transform: rotate(10deg);
+    }
+    35% {
+      transform: rotate(-10deg);
+    }
+    40%,
+    100% {
+      transform: rotate(0);
+    }
+  }
