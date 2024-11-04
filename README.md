@@ -36,10 +36,10 @@ Antes de começar, verifique se você atende aos seguintes requisitos:
 Clone o projeto com o git para poder utilizá-lo na sua máquina com:
 
 ```bash
-  $ git clone https://github.com/lipebianchi/responsive_hbo.git 
+   git clone https://github.com/lipebianchi/responsive_hbo.git 
 ```
 Após isso, basta abrir o arquivo "index.html" com seu navegador e você verá o projeto rodando de forma local na sua máquina.
 
-## Demonstração
+## 😊 Demonstração
 
 Acesse o projeto agora em tempo real [clicando aqui](https://lipebianchi.github.io/responsive_hbo/).
