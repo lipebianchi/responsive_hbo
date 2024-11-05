@@ -10,15 +10,15 @@ Este projeto consiste em uma réplica das páginas principal e de login da plata
 
 ## 🎆 Funcionalidades
 
-- Página Principal: Apresenta uma grade de conteúdos em destaque, com elementos interativos como botões, um catálogo e animações;
-- Página de Login: Inclui um formulário de autenticação com campos para e-mail e senha, além de botões para recuperação de senha e acesso à conta;
-- Responsividade: Ambas as páginas contemplam um layout completamente responsivo a diferentes tamanhos de tela.
+- **Página Principal**: Apresenta uma grade de conteúdos em destaque, com elementos interativos como botões, um catálogo e animações;
+- **Página de Login**: Inclui um formulário de autenticação com campos para e-mail e senha, além de botões para recuperação de senha e acesso à conta;
+- **Responsividade**: Ambas as páginas contemplam um layout completamente responsivo a diferentes tamanhos de tela.
 
 
 ## 🏅 Tecnologias Utilizadas
 
-- HTML5: Para a estruturação do contéudo;
-- CSS3: Para a estilização, responsividade e animações.
+- **HTML5**: Para a estruturação do contéudo;
+- **CSS3**: Para a estilização, responsividade e animações.
 
 ## 🦾 Ajustes, melhorias e atualizações
 
